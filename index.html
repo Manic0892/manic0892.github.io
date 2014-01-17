@@ -2,23 +2,32 @@
 	<head>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		
+		<script type='text/javascript' src='utils.js'></script>
+		
 		<title>Manic0892</title>
 		
 		<script type='text/javascript'>
 			$(function() {
 				$.get('https://api.github.com/users/Manic0892/repos', {sort: 'pushed'}, function( data ) {
 					for (i in data) {
-						if (data[i].fork == false) $('#repos').append('<a href="' + data[i].html_url + '">' + data[i].name + '</a><br>');
+						printRepo(data[i]);
 					}
 				});
 				$.get('https://api.github.com/users/Manic0892/orgs', function( data ) {
 					for (i in data) {
-						$.get(data[i].url, function( data ) {
-							$('#orgs').append('<a href="' + data.html_url + '">' + data.name + '</a><br>');
-						});
+						printOrg(data[i]);
 					}
 				});
 			});
+			
+			function printRepo(data) {
+				if (data.fork == false) $('#repos').append('<a href="' + data.html_url + '">' + data.name + '</a><br>');
+			}
+			function printOrg(data) {
+				$.get(data.url, function( data ) {
+					$('#orgs').append('<a href="' + data.html_url + '">' + data.name + '</a><br>');
+				});
+			}
 		</script>
 	</head>
 	<body>
