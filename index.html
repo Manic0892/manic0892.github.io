@@ -6,8 +6,10 @@
 		
 		<script type='text/javascript'>
 			$(function() {
-				$.get( "https://api.github.com/users/Manic0892/repos", function( data ) {
-					console.log(data);
+				$.get('https://api.github.com/users/Manic0892/repos', {sort: 'updated'}, function( data ) {
+					for (i in data) {
+						console.log(data.i);
+					}
 				});
 			});
 		</script>
