@@ -6,7 +6,9 @@
 		
 		<script type='text/javascript'>
 			$(function() {
-				console.log($().jquery);
+				$.get( "https://api.github.com/users/Manic0892/repos", function( data ) {
+					console.log(data);
+				});
 			});
 		</script>
 	</head>
