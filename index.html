@@ -1,37 +1,28 @@
 <html>
 	<head>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>-->
 		
-		<script type='text/javascript' src='utils.js'></script>
+		<!--<script type='text/javascript' src='utils.js'></script>-->
 		
-		<title>Manic0892</title>
-		
-		<script type='text/javascript'>
-			$(function() {
-				$.get('https://api.github.com/users/Manic0892/repos', {sort: 'pushed'}, function( data ) {
-					for (i in data) {
-						printRepo(data[i]);
-					}
-				});
-				$.get('https://api.github.com/users/Manic0892/orgs', function( data ) {
-					for (i in data) {
-						printOrg(data[i]);
-					}
-				});
-			});
-			
-			function printRepo(data) {
-				if (data.fork == false) $('#repos').append('<a href="' + data.html_url + '">' + data.name + '</a><br>');
-			}
-			function printOrg(data) {
-				$.get(data.url, function( data ) {
-					$('#orgs').append('<a href="' + data.html_url + '">' + data.name + '</a><br>');
-				});
-			}
-		</script>
+		<title>Manic0892 on GitHub</title>
 	</head>
 	<body>
-		<div id='repos'></div>
-		<div id='orgs'></div>
+		<h1><a href='https://github.com/Manic0892'>Manic0892</a></h1>
+		<h2>Featured Repositories</h2>
+		<div id='40yog'><a href='https://github.com/Manic0892/40yog'>The 40 Year Old Game</a></div>
+		<div>A side-scrolling 2D shooter/platformer is built on the ImpactJS engine in HTML5 based on The 40 Year Old Boy.</div>
+		<div id=draw'><a href='https://github.com/Manic0892/draw'>Draw</a></div>
+		<div>A small drawing application built in HTMl5 using the KineticJS framework.</div>
+		<div id='rid'><a href='https://github.com/Manic0892/rid'>Reddit-Imgur Downloader</a></div>
+		<div>A tiny python script that downloads all Imgur albums and images from a reddit user's profile.</div>
+		<h2>Affiliated Organizations</h2>
+		<div><a href='https://github.com/SmokingFishGames'>Smoking Fish Games</a></div>
+		<div>A father-son team, Smoking Fish Games created Imagedoku, a sudoku game that you play with your images.</div>
+		<div><a href='http://imagedoku.com'>Imagedoku</a> - <a href='https://github.com/SmokingFishGames/imgdoku'>Source</a></div>
+		<h2>Sites</h2>
+		<div><a href='http://seanmcgeer.com'>Portfolio - SeanMcGeer.com</a></div>
+		<div><a href='http://manic0892.com'>Personal - Manic0892.com</a></div>
+		<div><a href='http://blog.manic0892.com'>Blog</a></div>
+		<div><a href='http://twitter.com/Manic0892'>Twitter</a></div>
 	</body>
 </html>
