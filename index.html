@@ -1,28 +1,108 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>-->
-		
-		<!--<script type='text/javascript' src='utils.js'></script>-->
-		
-		<title>Manic0892 on GitHub</title>
+		<style type='text/css'>
+			body {
+				background-color: black;
+				font-family: Monda, sans-serif;
+				color: #696969;
+			}
+			a {
+				color: #c90404;
+				text-decoration:none;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+			#header {
+				font-size: 30px;
+				font-weight: bold;
+				color: rgb(153, 153, 153);
+			}
+			#headerImgWrapperWrapper {
+				text-align:center;
+				border: 0;
+			}
+			/*Fuck IE*/
+			.noBorder {
+				border: 0;
+			}
+			#headerLinks {
+				padding: 4px 0 0 0;
+			}
+			#fullWrapper {
+				width:560px;
+				margin: 0 auto;
+				padding-top: 16px;
+			}
+			#mainWrapper {
+				padding: 30px 0 30px 0;
+			}
+			.listing{
+				font-size:20px;
+			}
+			.category {
+				font-size:34px;
+				padding: 10px 0;
+			}
+			
+			#footer {
+				border-top: 1px solid #999;
+				font-size: .85em;
+			}
+			
+			#footer a, #footer a:active, #footer a:visited {
+				color: #ffffff;
+			}
+			
+			#footer ul {
+				list-style: none;
+				margin: 1em 0;
+				padding: 0;
+				text-align: center;
+			}
+			
+			#footer ul li {
+				display: inline;
+				margin: 0.5em;
+			}
+
+		</style>
+		<link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
+		<title>Manic GitHub</title>
 	</head>
 	<body>
-		<h1><a href='https://github.com/Manic0892'>Manic0892</a></h1>
-		<h2>Featured Repositories</h2>
-		<div id='40yog'><a href='https://github.com/Manic0892/40yog'>The 40 Year Old Game</a></div>
-		<div>A side-scrolling 2D shooter/platformer is built on the ImpactJS engine in HTML5 based on The 40 Year Old Boy.</div>
-		<div id=draw'><a href='https://github.com/Manic0892/draw'>Draw</a></div>
-		<div>A small drawing application built in HTMl5 using the KineticJS framework.</div>
-		<div id='rid'><a href='https://github.com/Manic0892/rid'>Reddit-Imgur Downloader</a></div>
-		<div>A tiny python script that downloads all Imgur albums and images from a reddit user's profile.</div>
-		<h2>Affiliated Organizations</h2>
-		<div><a href='https://github.com/SmokingFishGames'>Smoking Fish Games</a></div>
-		<div>A father-son team, Smoking Fish Games created Imagedoku, a sudoku game that you play with your images.</div>
-		<div><a href='http://imagedoku.com'>Imagedoku</a> - <a href='https://github.com/SmokingFishGames/imgdoku'>Source</a></div>
-		<h2>Sites</h2>
-		<div><a href='http://seanmcgeer.com'>Portfolio - SeanMcGeer.com</a></div>
-		<div><a href='http://manic0892.com'>Personal - Manic0892.com</a></div>
-		<div><a href='http://blog.manic0892.com'>Blog</a></div>
-		<div><a href='http://twitter.com/Manic0892'>Twitter</a></div>
+		<div id='fullWrapper'>
+			<div id='header'>
+				<div id='headerImgWrapperWrapper'>
+					<a href='/' id='headerImgWrapper' class='noBorder'>
+						<img src='./Manic_Banner_small.png' class='noBorder' />
+					</a>
+				</div>
+				<div id='headerLinks'>
+					<a href='http://manic0892.com'>Home</a> / <a href='http://blog.manic0892.com'>Blog</a> / <a href='/'>GitHub</a>
+				</div>
+			</div>
+			<div id='mainWrapper'>
+				<a class='listing' href='https://github.com/Manic0892'>GitHub Profile</a>
+				<div class='category'>Featured Repositories</div>
+				<div id='40yog'><a class='listing' href='https://github.com/Manic0892/40yog'>The 40 Year Old Game</a></div>
+				<div>A side-scrolling 2D shooter/platformer is built on the ImpactJS engine in HTML5 based on The 40 Year Old Boy.</div>
+				<div id=draw'><a class='listing' href='https://github.com/Manic0892/draw'>Draw</a></div>
+				<div>A small drawing application built in HTMl5 using the KineticJS framework.</div>
+				<div id='rid'><a class='listing' href='https://github.com/Manic0892/rid'>Reddit-Imgur Downloader</a></div>
+				<div>A tiny python script that downloads all Imgur albums and images from a reddit user's profile.</div>
+				<div class='category'>Affiliated Organizations</div>
+				<div><a class='listing' href='https://github.com/SmokingFishGames'>Smoking Fish Games</a></div>
+				<div>A father-son team, Smoking Fish Games created Imagedoku, a sudoku game that you play with your images.</div>
+				<div><a href='http://imagedoku.com'>Imagedoku</a> - <a href='https://github.com/SmokingFishGames/imgdoku'>Source</a></div>
+			</div>
+			<div id='footer'>
+				<ul>
+					<li>© 2013 <a href='http://manic0892.com/'>Manic</a></li>
+					<li>Open source on <a href='http://github.com/Manic0892/manic0892.github.io'>GitHub</a></li>
+				</ul>
+			</div>
+		</div>
 	</body>
 </html>
